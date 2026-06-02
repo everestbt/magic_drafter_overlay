@@ -1,0 +1,18 @@
+[workspace]
+members = [
+    # For executable crates
+    "bin/*",
+    # For library crates - NOT YET USED
+    #"lib/*"
+]
+resolver = "2"
+
+[workspace.dependencies]
+# local crates - bin
+cli = {path = "./bin/cli", version = "0.0.0"}
+ui = {path = "./bin/ui", version = "0.0.0"}
+# local crates - libs
+
+# non-local crates
+iced = { version = "0.14", features = ["image", "tokio"] }
+color-eyre = "0.6"

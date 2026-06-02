@@ -1,0 +1,11 @@
+[package]
+name = "cli"
+version = "0.0.0"
+edition = "2021"
+description = "The CLI for Magic Drafter Overlay"
+
+[dependencies]
+
+[[bin]]
+path = "src/main.rs"
+name = "mtg-drafter-cli"

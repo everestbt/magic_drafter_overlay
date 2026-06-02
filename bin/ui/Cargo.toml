@@ -1,0 +1,13 @@
+[package]
+name = "ui"
+version = "0.0.0"
+edition = "2021"
+description = "The UI for Magic Drafter Overlay"
+
+[dependencies]
+iced.workspace = true
+color-eyre.workspace = true
+
+[[bin]]
+path = "src/main.rs"
+name = "mtg-drafter-overlay"
