@@ -2,8 +2,8 @@
 members = [
     # For executable crates
     "bin/*",
-    # For library crates - NOT YET USED
-    #"lib/*"
+    # For library crates 
+    "lib/*"
 ]
 resolver = "2"
 
@@ -12,7 +12,11 @@ resolver = "2"
 cli = {path = "./bin/cli", version = "0.0.0"}
 ui = {path = "./bin/ui", version = "0.0.0"}
 # local crates - libs
+player_log_reader = {path = "./lib/player_log_reader", version = "0.0.0"}
 
 # non-local crates
 iced = { version = "0.14", features = ["image", "tokio"] }
 color-eyre = "0.6"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+directories = "6.0.0"

@@ -1,0 +1,10 @@
+[package]
+name = "player_log_reader"
+version = "0.0.0"
+edition = "2021"
+description = "Reads the player log"
+
+[dependencies]
+directories.workspace = true
+serde.workspace = true
+serde_json.workspace = true

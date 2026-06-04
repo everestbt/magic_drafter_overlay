@@ -1,0 +1,1403 @@
+[UnityCrossThreadLogger]Client.SceneChange {"fromSceneName":"EventLanding","toSceneName":"TableDraftQueue","initiator":"System","context":"Entering table draft queue: SOS_Premier_Draft"}
+SceneLoader:LoadContentInternal(NavContentType, SceneChangeInitiator, String, Boolean, Action, Boolean)
+EventPage.Components.<>c__DisplayClass37_0:<LoadHumanDraft>g__ProcessDraftPod|1()
+EventPage.Components.<>c__DisplayClass37_0:<LoadHumanDraft>b__0(Promise`1)
+Core.Code.Promises.MainThreadDispatcher:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":1,"SelfPack":1,"PackCards":"102668,102596,102469,102506,102645,102560,102618,102710,102688,102606,102475,102769,102713,102738"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Client.SceneChange {"fromSceneName":"TableDraftQueue","toSceneName":"Draft","initiator":"System","context":"HumanDraft"}
+SceneLoader:LoadContentInternal(NavContentType, SceneChangeInitiator, String, Boolean, Action, Boolean)
+SceneLoader:GoToDraftScene(EventContext)
+Wotc.Mtga.Wrapper.Draft.<Coroutine_MoveToDraftScene>d__51:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+Attempting to get IEmoteDataProvider through static instance of WrapperController. Consider injecting dependency rather than doing this.
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"c3715249-5ee9-4320-a471-94cfd5b1bc97","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102475],\"Pack\":1,\"Pick\":1}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:12:40
+<== EventPlayerDraftMakePick(c3715249-5ee9-4320-a471-94cfd5b1bc97)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":2,"SelfPack":1,"PackCards":"102548,102648,102702,102490,102600,102596,102724,102524,102678,102611,102533,102762,102735"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"a522c778-36d5-49a3-adeb-3da0fc331051","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102490],\"Pack\":1,\"Pick\":2}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:13:06
+<== EventPlayerDraftMakePick(a522c778-36d5-49a3-adeb-3da0fc331051)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":3,"SelfPack":1,"PackCards":"102467,102613,102709,102586,102702,102531,102497,102666,102521,102662,102756,102721"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"a0a02e83-e7f8-471f-a754-66f8b1225bf3","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102531],\"Pack\":1,\"Pick\":3}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:13:27
+<== EventPlayerDraftMakePick(a0a02e83-e7f8-471f-a754-66f8b1225bf3)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":4,"SelfPack":1,"PackCards":"102534,102490,102590,102513,102621,102645,102689,102693,102566,102649,102737"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"1523d5ba-27ed-49a6-893a-46a0a87b9790","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102534],\"Pack\":1,\"Pick\":4}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:14:38
+<== EventPlayerDraftMakePick(1523d5ba-27ed-49a6-893a-46a0a87b9790)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":5,"SelfPack":1,"PackCards":"102497,102708,102535,102588,102609,102612,102629,102569,102561,102725"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"f85cb514-92f5-4e14-877e-f27e6103cf6e","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102629],\"Pack\":1,\"Pick\":5}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:16:06
+<== EventPlayerDraftMakePick(f85cb514-92f5-4e14-877e-f27e6103cf6e)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":6,"SelfPack":1,"PackCards":"102588,102490,102610,102481,102674,102687,102623,102813,102717"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"e6f7f504-8c1f-4439-a551-27ea900b0b2f","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102813],\"Pack\":1,\"Pick\":6}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:17:05
+<== EventPlayerDraftMakePick(e6f7f504-8c1f-4439-a551-27ea900b0b2f)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":7,"SelfPack":1,"PackCards":"102488,102706,102613,102559,102467,102610,102521,102736"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"40ea1554-6a59-46c9-b90d-e4a0e7f20617","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102559],\"Pack\":1,\"Pick\":7}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:17:15
+<== EventPlayerDraftMakePick(40ea1554-6a59-46c9-b90d-e4a0e7f20617)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":8,"SelfPack":1,"PackCards":"102549,102706,102655,102609,102571,102705,102733"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"e5f8674a-f230-4ccf-a05a-2959d60580b3","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102549],\"Pack\":1,\"Pick\":8}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:17:33
+<== EventPlayerDraftMakePick(e5f8674a-f230-4ccf-a05a-2959d60580b3)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":9,"SelfPack":1,"PackCards":"102668,102469,102506,102645,102618,102738"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"b7ff12e7-409b-4ce6-b148-348da3d93906","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102469],\"Pack\":1,\"Pick\":9}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:17:39
+<== EventPlayerDraftMakePick(b7ff12e7-409b-4ce6-b148-348da3d93906)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":10,"SelfPack":1,"PackCards":"102548,102648,102600,102611,102735"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"2fe3f3cf-e17c-4078-90af-3f93bdb40181","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102548],\"Pack\":1,\"Pick\":10}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:18:17
+<== EventPlayerDraftMakePick(2fe3f3cf-e17c-4078-90af-3f93bdb40181)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":11,"SelfPack":1,"PackCards":"102613,102709,102662,102756"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"f38fd2b8-58bd-46d6-986a-a0b130acb061","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102756],\"Pack\":1,\"Pick\":11}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:ReserveCardAndLockIn(DraftPackCardView, MetaCardHolder)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:18:27
+<== EventPlayerDraftMakePick(f38fd2b8-58bd-46d6-986a-a0b130acb061)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":12,"SelfPack":1,"PackCards":"102490,102645,102737"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"17e9f544-3c33-4f12-b7cb-294074485558","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102490],\"Pack\":1,\"Pick\":12}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:18:49
+<== EventPlayerDraftMakePick(17e9f544-3c33-4f12-b7cb-294074485558)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":13,"SelfPack":1,"PackCards":"102609,102612"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"9a3f80cf-6913-4813-999a-bef12505249f","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102612],\"Pack\":1,\"Pick\":13}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:ReserveCardAndLockIn(DraftPackCardView, MetaCardHolder)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:18:56
+<== EventPlayerDraftMakePick(9a3f80cf-6913-4813-999a-bef12505249f)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":14,"SelfPack":1,"PackCards":"102687"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"8320afb4-9578-4ba8-9090-af831f14ed40","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102687],\"Pack\":1,\"Pick\":14}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:ReserveCardAndLockIn(DraftPackCardView, MetaCardHolder)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:19:08
+<== EventPlayerDraftMakePick(8320afb4-9578-4ba8-9090-af831f14ed40)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":1,"SelfPack":2,"PackCards":"102515,102679,102603,102609,102590,102648,102533,102605,102707,102760,102698,102695,102553,102736"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"91a681fd-a669-491e-9bf5-98e026b92c0d","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102760],\"Pack\":2,\"Pick\":1}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:19:29
+<== EventPlayerDraftMakePick(91a681fd-a669-491e-9bf5-98e026b92c0d)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":2,"SelfPack":2,"PackCards":"102655,102481,102622,102469,102724,102613,102681,102518,102519,102575,102775,102643,102725"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"14cf8f52-0288-4fc0-ad4f-036d1e694b01","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102655],\"Pack\":2,\"Pick\":2}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:19:43
+<== EventPlayerDraftMakePick(14cf8f52-0288-4fc0-ad4f-036d1e694b01)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":3,"SelfPack":2,"PackCards":"102655,102478,102520,102610,102534,102691,102493,102605,102575,102602,102716,102721"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"d002c546-5e47-4a4b-8e50-70e18bdb0017","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102493],\"Pack\":2,\"Pick\":3}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:21:11
+<== EventPlayerDraftMakePick(d002c546-5e47-4a4b-8e50-70e18bdb0017)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":4,"SelfPack":2,"PackCards":"102668,102586,102536,102610,102540,102546,102580,102518,102788,102665,102735"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"f4ed5c33-2093-4e96-9adf-3bb0ee40597f","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102546],\"Pack\":2,\"Pick\":4}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:21:56
+<== EventPlayerDraftMakePick(f4ed5c33-2093-4e96-9adf-3bb0ee40597f)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":5,"SelfPack":2,"PackCards":"102461,102607,102483,102562,102524,102707,102547,102580,102532,102786"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"d347ba29-0b47-4e91-9ae6-2166e18da427","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102483],\"Pack\":2,\"Pick\":5}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":6,"SelfPack":2,"PackCards":"102534,102488,102565,102708,102470,102512,102659,102768,102717"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]03/06/2026 21:22:15
+<== EventPlayerDraftMakePick(d347ba29-0b47-4e91-9ae6-2166e18da427)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"49303aa5-7f0d-43c0-8435-972d5f64a845","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102470],\"Pack\":2,\"Pick\":6}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":7,"SelfPack":2,"PackCards":"102610,102596,102523,102651,102548,102502,102803,102714"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]03/06/2026 21:22:26
+<== EventPlayerDraftMakePick(49303aa5-7f0d-43c0-8435-972d5f64a845)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"2885c187-2a09-44be-aa59-0412f1831743","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102803],\"Pack\":2,\"Pick\":7}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:ReserveCardAndLockIn(DraftPackCardView, MetaCardHolder)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:22:40
+<== EventPlayerDraftMakePick(2885c187-2a09-44be-aa59-0412f1831743)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":8,"SelfPack":2,"PackCards":"102487,102600,102535,102531,102676,102656,102731"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"cf564d60-dc60-4251-aa47-a8589c151f3f","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102656],\"Pack\":2,\"Pick\":8}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:22:45
+<== EventPlayerDraftMakePick(cf564d60-dc60-4251-aa47-a8589c151f3f)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+The AnimationClip 'Draft_WaitingOnPackTextFadeIn' used by the Animation component 'WaitinOnPacks_Text' must be marked as Legacy.
+Default clip could not be found in attached animations list.
+Wotc.Mtga.Extensions.GameObjectExtensions:UpdateActive(GameObject, Boolean, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:UpdateDeckView()
+Wotc.Mtga.Wrapper.Draft.<DelayedUpdateDeckView>d__98:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[ line 1865174312]
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":9,"SelfPack":2,"PackCards":"102603,102609,102590,102707,102553,102736"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"7c820817-b3c8-44a8-8265-7b1678ee2300","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102553],\"Pack\":2,\"Pick\":9}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:ReserveCardAndLockIn(DraftPackCardView, MetaCardHolder)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":10,"SelfPack":2,"PackCards":"102481,102622,102613,102681,102643"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]03/06/2026 21:23:13
+<== EventPlayerDraftMakePick(7c820817-b3c8-44a8-8265-7b1678ee2300)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"e9ed4040-1001-4c45-a4ea-9e058f76a193","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102643],\"Pack\":2,\"Pick\":10}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:ReserveCardAndLockIn(DraftPackCardView, MetaCardHolder)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:23:30
+<== EventPlayerDraftMakePick(e9ed4040-1001-4c45-a4ea-9e058f76a193)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":11,"SelfPack":2,"PackCards":"102655,102478,102610,102602"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"45e356c1-16c8-45e3-9f56-89d22b0e18a9","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102478],\"Pack\":2,\"Pick\":11}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:23:35
+<== EventPlayerDraftMakePick(45e356c1-16c8-45e3-9f56-89d22b0e18a9)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":12,"SelfPack":2,"PackCards":"102610,102788,102735"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"9d1dbd78-5246-433f-a57c-e599b04cd975","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102788],\"Pack\":2,\"Pick\":12}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:ReserveCardAndLockIn(DraftPackCardView, MetaCardHolder)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:23:39
+<== EventPlayerDraftMakePick(9d1dbd78-5246-433f-a57c-e599b04cd975)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":13,"SelfPack":2,"PackCards":"102562,102786"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"db909290-3e0c-4937-8878-a28560def53a","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102562],\"Pack\":2,\"Pick\":13}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:ReserveCardAndLockIn(DraftPackCardView, MetaCardHolder)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:24:03
+<== EventPlayerDraftMakePick(db909290-3e0c-4937-8878-a28560def53a)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":14,"SelfPack":2,"PackCards":"102565"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"acb23f48-d112-4c4d-a51e-b01dab4708ea","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102565],\"Pack\":2,\"Pick\":14}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:ReserveCardAndLockIn(DraftPackCardView, MetaCardHolder)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:24:05
+<== EventPlayerDraftMakePick(acb23f48-d112-4c4d-a51e-b01dab4708ea)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":1,"SelfPack":3,"PackCards":"102709,102702,102487,102600,102648,102610,102682,102499,102473,102571,102810,102570,102690,102740"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"bc91c752-485d-49be-9f18-1f4ae511a1aa","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102487],\"Pack\":3,\"Pick\":1}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:24:31
+<== EventPlayerDraftMakePick(bc91c752-485d-49be-9f18-1f4ae511a1aa)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+The AnimationClip 'Draft_WaitingOnPackTextFadeIn' used by the Animation component 'WaitinOnPacks_Text' must be marked as Legacy.
+Default clip could not be found in attached animations list.
+Wotc.Mtga.Extensions.GameObjectExtensions:UpdateActive(GameObject, Boolean, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:UpdateDeckView()
+Wotc.Mtga.Wrapper.Draft.<DelayedUpdateDeckView>d__98:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[ line 1865174312]
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":2,"SelfPack":3,"PackCards":"102618,102689,102500,102655,102709,102679,102476,102663,102623,102532,102805,102558,102721"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"d6d42eb5-16db-42d2-9d3d-2cfdd7f5ffad","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102558],\"Pack\":3,\"Pick\":2}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":3,"SelfPack":3,"PackCards":"102529,102531,102626,102586,102483,102461,102684,102585,102464,102718,102479,102739"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]03/06/2026 21:25:15
+<== EventPlayerDraftMakePick(d6d42eb5-16db-42d2-9d3d-2cfdd7f5ffad)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+The AnimationClip 'Draft_WaitingOnPackTextFadeIn' used by the Animation component 'WaitinOnPacks_Text' must be marked as Legacy.
+Default clip could not be found in attached animations list.
+Wotc.Mtga.Extensions.GameObjectExtensions:UpdateActive(GameObject, Boolean, Boolean)
+DG.Tweening.Tween:OnTweenCallback(TweenCallback, Tween)
+DG.Tweening.Tween:DoGoto(Tween, Single, Int32, UpdateMode)
+DG.Tweening.Core.TweenManager:Update(Tween, Single, Single, Boolean)
+DG.Tweening.Core.TweenManager:Update(UpdateType, Single, Single)
+DG.Tweening.Core.DOTweenComponent:Update()
+
+[ line 1865174200]
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"03d78d88-a1a2-42a2-95fe-b8ab8c2e2eea","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102479],\"Pack\":3,\"Pick\":3}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:25:21
+<== EventPlayerDraftMakePick(03d78d88-a1a2-42a2-95fe-b8ab8c2e2eea)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+The AnimationClip 'Draft_WaitingOnPackTextFadeIn' used by the Animation component 'WaitinOnPacks_Text' must be marked as Legacy.
+Default clip could not be found in attached animations list.
+Wotc.Mtga.Extensions.GameObjectExtensions:UpdateActive(GameObject, Boolean, Boolean)
+DG.Tweening.Tween:OnTweenCallback(TweenCallback, Tween)
+DG.Tweening.Tween:DoGoto(Tween, Single, Int32, UpdateMode)
+DG.Tweening.Core.TweenManager:Update(Tween, Single, Single, Boolean)
+DG.Tweening.Core.TweenManager:Update(UpdateType, Single, Single)
+DG.Tweening.Core.DOTweenComponent:Update()
+
+[ line 1865174200]
+
+[Accounts - SharedContextView] Refreshing access token.
+Core.Shared.Code.<Coroutine_RefreshAccessToken>d__1:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Core.Shared.Code.TokenManager:ValidateToken(IAccountClient, IFrontDoorConnectionServiceWrapper, FrontDoorConnectionManager, Boolean)
+<Coroutine_ValidateToken>d__151:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[TaskLogger][Accounts - SharedContextView] Access token refreshed.
+Core.Shared.Code.<>c__DisplayClass1_0:<Coroutine_RefreshAccessToken>b__0(Promise`1)
+Wizards.Arena.Promises.<>c__DisplayClass1_0`1:<SideEffectfulContinuation>b__0(Promise`1)
+Wizards.Arena.Promises.<runAsync>d__6:MoveNext()
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Runtime.CompilerServices.MoveNextRunner:Run()
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback(ContextCallback, Object, Task&)
+System.Threading.Tasks.Task:FinishContinuations()
+System.Threading.Tasks.Task`1:TrySetResult(TResult)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1:SetResult(TResult)
+Wizards.Arena.Promises.<TryCatch>d__2`1:MoveNext()
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Runtime.CompilerServices.MoveNextRunner:Run()
+UnityEngine.WorkRequest:Invoke()
+UnityEngine.UnitySynchronizationContext:Exec()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":4,"SelfPack":3,"PackCards":"102470,102548,102527,102592,102562,102610,102464,102510,102646,102722,102738"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"13b5d53a-8571-4ccb-ae7e-97cb6b3004cb","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102722],\"Pack\":3,\"Pick\":4}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:ReserveCardAndLockIn(DraftPackCardView, MetaCardHolder)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:25:56
+<== EventPlayerDraftMakePick(13b5d53a-8571-4ccb-ae7e-97cb6b3004cb)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+The AnimationClip 'Draft_WaitingOnPackTextFadeIn' used by the Animation component 'WaitinOnPacks_Text' must be marked as Legacy.
+Default clip could not be found in attached animations list.
+Wotc.Mtga.Extensions.GameObjectExtensions:UpdateActive(GameObject, Boolean, Boolean)
+DG.Tweening.Tween:OnTweenCallback(TweenCallback, Tween)
+DG.Tweening.Tween:DoGoto(Tween, Single, Int32, UpdateMode)
+DG.Tweening.Core.TweenManager:Update(Tween, Single, Single, Boolean)
+DG.Tweening.Core.TweenManager:Update(UpdateType, Single, Single)
+DG.Tweening.Core.DOTweenComponent:Update()
+
+[ line 1865174200]
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":5,"SelfPack":3,"PackCards":"102563,102536,102467,102469,102525,102612,102678,102551,102758,102717"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"d7f28dfd-bd38-48a8-868f-f7230c1371bd","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102536],\"Pack\":3,\"Pick\":5}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":6,"SelfPack":3,"PackCards":"102708,102586,102488,102501,102654,102696,102496,102705,102725"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]03/06/2026 21:26:21
+<== EventPlayerDraftMakePick(d7f28dfd-bd38-48a8-868f-f7230c1371bd)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+The AnimationClip 'Draft_WaitingOnPackTextFadeIn' used by the Animation component 'WaitinOnPacks_Text' must be marked as Legacy.
+Default clip could not be found in attached animations list.
+Wotc.Mtga.Extensions.GameObjectExtensions:UpdateActive(GameObject, Boolean, Boolean)
+DG.Tweening.Tween:OnTweenCallback(TweenCallback, Tween)
+DG.Tweening.Tween:DoGoto(Tween, Single, Int32, UpdateMode)
+DG.Tweening.Core.TweenManager:Update(Tween, Single, Single, Boolean)
+DG.Tweening.Core.TweenManager:Update(UpdateType, Single, Single)
+DG.Tweening.Core.DOTweenComponent:Update()
+
+[ line 1865174200]
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"e1d25431-4004-4fbf-bb16-ad58eec1641f","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102496],\"Pack\":3,\"Pick\":6}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:26:38
+<== EventPlayerDraftMakePick(e1d25431-4004-4fbf-bb16-ad58eec1641f)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":7,"SelfPack":3,"PackCards":"102562,102644,102621,102525,102707,102667,102624,102734"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+The AnimationClip 'Draft_WaitingOnPackTextFadeIn' used by the Animation component 'WaitinOnPacks_Text' must be marked as Legacy.
+Default clip could not be found in attached animations list.
+Wotc.Mtga.Extensions.GameObjectExtensions:UpdateActive(GameObject, Boolean, Boolean)
+DG.Tweening.Tween:OnTweenCallback(TweenCallback, Tween)
+DG.Tweening.Tween:DoGoto(Tween, Single, Int32, UpdateMode)
+DG.Tweening.Core.TweenManager:Update(Tween, Single, Single, Boolean)
+DG.Tweening.Core.TweenManager:Update(UpdateType, Single, Single)
+DG.Tweening.Core.DOTweenComponent:Update()
+
+[ line 1865174200]
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"bb8a4c3e-e351-4bd6-a0e4-c4bf7a55ae8e","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102707],\"Pack\":3,\"Pick\":7}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:ReserveCardAndLockIn(DraftPackCardView, MetaCardHolder)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:26:53
+<== EventPlayerDraftMakePick(bb8a4c3e-e351-4bd6-a0e4-c4bf7a55ae8e)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+The AnimationClip 'Draft_WaitingOnPackTextFadeIn' used by the Animation component 'WaitinOnPacks_Text' must be marked as Legacy.
+Default clip could not be found in attached animations list.
+Wotc.Mtga.Extensions.GameObjectExtensions:UpdateActive(GameObject, Boolean, Boolean)
+DG.Tweening.Tween:OnTweenCallback(TweenCallback, Tween)
+DG.Tweening.Tween:DoGoto(Tween, Single, Int32, UpdateMode)
+DG.Tweening.Core.TweenManager:Update(Tween, Single, Single, Boolean)
+DG.Tweening.Core.TweenManager:Update(UpdateType, Single, Single)
+DG.Tweening.Core.DOTweenComponent:Update()
+
+[ line 1865174200]
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":8,"SelfPack":3,"PackCards":"102478,102691,102531,102615,102529,102628,102681"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"ebcf6ecc-ed79-4e82-b912-3c1060be04a3","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102531],\"Pack\":3,\"Pick\":8}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:27:10
+<== EventPlayerDraftMakePick(ebcf6ecc-ed79-4e82-b912-3c1060be04a3)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+The AnimationClip 'Draft_WaitingOnPackTextFadeIn' used by the Animation component 'WaitinOnPacks_Text' must be marked as Legacy.
+Default clip could not be found in attached animations list.
+Wotc.Mtga.Extensions.GameObjectExtensions:UpdateActive(GameObject, Boolean, Boolean)
+DG.Tweening.Tween:OnTweenCallback(TweenCallback, Tween)
+DG.Tweening.Tween:DoGoto(Tween, Single, Int32, UpdateMode)
+DG.Tweening.Core.TweenManager:Update(Tween, Single, Single, Boolean)
+DG.Tweening.Core.TweenManager:Update(UpdateType, Single, Single)
+DG.Tweening.Core.DOTweenComponent:Update()
+
+[ line 1865174200]
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":9,"SelfPack":3,"PackCards":"102709,102600,102648,102610,102570,102740"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"21bcd51d-d9e1-4a3a-8871-20fdd9e147bb","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102570],\"Pack\":3,\"Pick\":9}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:ReserveCardAndLockIn(DraftPackCardView, MetaCardHolder)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:27:39
+<== EventPlayerDraftMakePick(21bcd51d-d9e1-4a3a-8871-20fdd9e147bb)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+The AnimationClip 'Draft_WaitingOnPackTextFadeIn' used by the Animation component 'WaitinOnPacks_Text' must be marked as Legacy.
+Default clip could not be found in attached animations list.
+Wotc.Mtga.Extensions.GameObjectExtensions:UpdateActive(GameObject, Boolean, Boolean)
+DG.Tweening.Tween:OnTweenCallback(TweenCallback, Tween)
+DG.Tweening.Tween:DoGoto(Tween, Single, Int32, UpdateMode)
+DG.Tweening.Core.TweenManager:Update(Tween, Single, Single, Boolean)
+DG.Tweening.Core.TweenManager:Update(UpdateType, Single, Single)
+DG.Tweening.Core.DOTweenComponent:Update()
+
+[ line 1865174200]
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":10,"SelfPack":3,"PackCards":"102618,102500,102655,102679,102476"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"9f78b50d-dd86-4af8-980a-1df490716df9","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102679],\"Pack\":3,\"Pick\":10}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:27:43
+<== EventPlayerDraftMakePick(9f78b50d-dd86-4af8-980a-1df490716df9)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+The AnimationClip 'Draft_WaitingOnPackTextFadeIn' used by the Animation component 'WaitinOnPacks_Text' must be marked as Legacy.
+Default clip could not be found in attached animations list.
+Wotc.Mtga.Extensions.GameObjectExtensions:UpdateActive(GameObject, Boolean, Boolean)
+DG.Tweening.Tween:OnTweenCallback(TweenCallback, Tween)
+DG.Tweening.Tween:DoGoto(Tween, Single, Int32, UpdateMode)
+DG.Tweening.Core.TweenManager:Update(Tween, Single, Single, Boolean)
+DG.Tweening.Core.TweenManager:Update(UpdateType, Single, Single)
+DG.Tweening.Core.DOTweenComponent:Update()
+
+[ line 1865174200]
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":11,"SelfPack":3,"PackCards":"102626,102586,102718,102739"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"901e99df-b6b0-456d-b7ef-a83aaa92692c","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102718],\"Pack\":3,\"Pick\":11}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:ReserveCardAndLockIn(DraftPackCardView, MetaCardHolder)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:28:09
+<== EventPlayerDraftMakePick(901e99df-b6b0-456d-b7ef-a83aaa92692c)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":12,"SelfPack":3,"PackCards":"102562,102610,102738"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+The AnimationClip 'Draft_WaitingOnPackTextFadeIn' used by the Animation component 'WaitinOnPacks_Text' must be marked as Legacy.
+Default clip could not be found in attached animations list.
+Wotc.Mtga.Extensions.GameObjectExtensions:UpdateActive(GameObject, Boolean, Boolean)
+DG.Tweening.Tween:OnTweenCallback(TweenCallback, Tween)
+DG.Tweening.Tween:DoGoto(Tween, Single, Int32, UpdateMode)
+DG.Tweening.Core.TweenManager:Update(Tween, Single, Single, Boolean)
+DG.Tweening.Core.TweenManager:Update(UpdateType, Single, Single)
+DG.Tweening.Core.DOTweenComponent:Update()
+
+[ line 1865174200]
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"122855d4-2370-43fe-a6a0-64919c586726","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102562],\"Pack\":3,\"Pick\":12}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:ReserveCardAndLockIn(DraftPackCardView, MetaCardHolder)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:28:13
+<== EventPlayerDraftMakePick(122855d4-2370-43fe-a6a0-64919c586726)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+The AnimationClip 'Draft_WaitingOnPackTextFadeIn' used by the Animation component 'WaitinOnPacks_Text' must be marked as Legacy.
+Default clip could not be found in attached animations list.
+Wotc.Mtga.Extensions.GameObjectExtensions:UpdateActive(GameObject, Boolean, Boolean)
+DG.Tweening.Tween:OnTweenCallback(TweenCallback, Tween)
+DG.Tweening.Tween:DoGoto(Tween, Single, Int32, UpdateMode)
+DG.Tweening.Core.TweenManager:Update(Tween, Single, Single, Boolean)
+DG.Tweening.Core.TweenManager:Update(UpdateType, Single, Single)
+DG.Tweening.Core.DOTweenComponent:Update()
+
+[ line 1865174200]
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":13,"SelfPack":3,"PackCards":"102469,102758"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+[UnityCrossThreadLogger]==> EventPlayerDraftMakePick {"id":"e586c535-0c49-468c-9caf-b00d3e3779a7","request":"{\"DraftId\":\"7db8f88d-852a-4854-a9d2-a18e7f084cda\",\"GrpIds\":[102469],\"Pack\":3,\"Pick\":13}"}
+FrontDoorConnectionAWS:LogOutgoingMessage(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendOnWire(IFDPromiseWriter)
+MessageRateLimiter:SendWithLimitCheck(IFDPromiseWriter)
+FrontDoorConnectionAWS:SendMetaRequestMessage(Func`2, Func`2, Func`2, Cmd)
+Wotc.Mtga.Wrapper.Draft.<MakePick>d__59:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:DraftCards(DictionaryList`2, Boolean)
+Wotc.Mtga.Wrapper.Draft.DraftContentController:HandleOnConfirmPickButtonClicked()
+Wotc.Mtga.Wrapper.Draft.DraftDeckView:<Init>b__53_9()
+UnityEngine.Events.UnityEvent:Invoke()
+CustomButton:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[UnityCrossThreadLogger]03/06/2026 21:28:26
+<== EventPlayerDraftMakePick(e586c535-0c49-468c-9caf-b00d3e3779a7)
+{"IsPickSuccessful":true}
+FrontDoorConnectionAWS:LogIncomingMessage(CmdType, Guid, IFDPromiseWriter)
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
+The AnimationClip 'Draft_WaitingOnPackTextFadeIn' used by the Animation component 'WaitinOnPacks_Text' must be marked as Legacy.
+Default clip could not be found in attached animations list.
+Wotc.Mtga.Extensions.GameObjectExtensions:UpdateActive(GameObject, Boolean, Boolean)
+DG.Tweening.Tween:OnTweenCallback(TweenCallback, Tween)
+DG.Tweening.Tween:DoGoto(Tween, Single, Int32, UpdateMode)
+DG.Tweening.Core.TweenManager:Update(Tween, Single, Single, Boolean)
+DG.Tweening.Core.TweenManager:Update(UpdateType, Single, Single)
+DG.Tweening.Core.DOTweenComponent:Update()
+
+[ line 1865174200]
+
+[UnityCrossThreadLogger]Draft.Notify {"draftId":"7db8f88d-852a-4854-a9d2-a18e7f084cda","SelfPick":14,"SelfPack":3,"PackCards":"102708"}
+FrontDoorConnectionAWS:HandleTcpEvent(ITcpEvent)
+FrontDoorConnectionAWS:ProcessMessages()
+PAPA:Update()
+
