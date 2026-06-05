@@ -6,11 +6,11 @@ use std::io::{BufRead, BufReader};
 use std::str::FromStr;
 use serde_json::Value;
 
-pub struct Card {
+pub struct ArenaId {
     pub id: i32
 }
 
-pub fn get_latest_draft_cards() -> Option<Vec<Card>> {
+pub fn get_latest_draft_cards() -> Option<Vec<ArenaId>> {
     let path = get_path();
     check_for_latest_draft_cards(path)
 }
@@ -33,7 +33,7 @@ fn get_path() -> PathBuf {
     }
 }
 
-fn check_for_latest_draft_cards(path: PathBuf) -> Option<Vec<Card>> {
+fn check_for_latest_draft_cards(path: PathBuf) -> Option<Vec<ArenaId>> {
     let line_read = search_file_for_latest_draft_line(path)
         .and_then(|l| l.split_once(' ').map(|s| s.1.to_string()))
         .and_then(|l| Value::from_str(l.as_str()).ok())
@@ -43,7 +43,7 @@ fn check_for_latest_draft_cards(path: PathBuf) -> Option<Vec<Card>> {
             let mut cards = vec![];
             for card in l.split(',') {
                 let id = i32::from_str(card).expect("Card id not an integer");
-                cards.push(Card {id});
+                cards.push(ArenaId {id});
             }
             cards
         });

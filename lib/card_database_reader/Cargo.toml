@@ -1,0 +1,8 @@
+[package]
+name = "card_database_reader"
+version = "0.0.0"
+edition = "2021"
+description = "Checks for the card against the card database"
+
+[dependencies]
+rusqlite.workspace = true
