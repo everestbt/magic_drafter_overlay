@@ -20,15 +20,20 @@ pub fn get_ratings(path: PathBuf, cards: &[String], sort_val: &str) -> Result<Ve
         let record = result?;
         let name = record.get(0).expect("Card name must be in the first column");
         if cards.contains(&name.to_string()) {
-            let rating = record.get(index).map(|r| map_rating(r));
+            let rating = record.get(index).and_then(|r| map_rating(r));
             ratings.push(CardRatings { card_name: name.to_string(), rating });
         }
     }
     Ok(ratings)
 }
 
-fn map_rating(rating: &str) -> Decimal {
+fn map_rating(rating: &str) -> Option<Decimal> {
     // Trim common string
     let s = rating.replace(&['%', 'p'][..], "");
-    Decimal::from_str(s.as_str()).expect("Should only be numbers")
+    if s.is_empty() {
+        None
+    }
+    else {
+        Some(Decimal::from_str(s.as_str()).expect("Should only be numbers"))
+    }
 }
