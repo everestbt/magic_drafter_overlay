@@ -28,7 +28,7 @@ pub fn get_default_path() -> PathBuf {
     }
 }
 
-pub fn check_for_latest_draft_cards(path: PathBuf) -> Option<Vec<ArenaId>> {
+pub fn check_for_latest_draft_cards(path: &PathBuf) -> Option<Vec<ArenaId>> {
     let line_read = search_file_for_latest_draft_line(path)
         .and_then(|l| l.split_once(' ').map(|s| s.1.to_string()))
         .and_then(|l| Value::from_str(l.as_str()).ok())
@@ -45,7 +45,7 @@ pub fn check_for_latest_draft_cards(path: PathBuf) -> Option<Vec<ArenaId>> {
     line_read
 }
 
-fn search_file_for_latest_draft_line(path: PathBuf) -> Option<String> {
+fn search_file_for_latest_draft_line(path: &PathBuf) -> Option<String> {
     if let Ok(file) = File::open(path) {
         let lines = BufReader::new(file).lines();
         let mut draft_line = None;
@@ -69,21 +69,21 @@ mod tests {
 
     #[test]
     fn test_read_in_file_single_line() {
-        let line = search_file_for_latest_draft_line(PathBuf::from_str("./example.log").unwrap());
+        let line = search_file_for_latest_draft_line(&PathBuf::from_str("./example.log").unwrap());
         assert!(line.is_some());
         assert!(line.unwrap().contains("\"SelfPick\":13"));
     }
 
     #[test]
     fn test_read_in_file_multiple_lines() {
-        let line = search_file_for_latest_draft_line(PathBuf::from_str("./example2.log").unwrap());
+        let line = search_file_for_latest_draft_line(&PathBuf::from_str("./example2.log").unwrap());
         assert!(line.is_some());
         assert!(line.unwrap().contains("\"SelfPick\":15"));
     }
 
     #[test]
     fn test_read_in_player_log() {
-        let cards = check_for_latest_draft_cards(PathBuf::from_str("./PlayerLogExample.log").unwrap());
+        let cards = check_for_latest_draft_cards(&PathBuf::from_str("./PlayerLogExample.log").unwrap());
         assert!(cards.is_some());
         assert_eq!(cards.unwrap().first().unwrap().id, 102708);
     }
