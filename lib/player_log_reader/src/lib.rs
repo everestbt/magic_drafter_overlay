@@ -10,16 +10,11 @@ pub struct ArenaId {
     pub id: i32
 }
 
-pub fn get_latest_draft_cards() -> Option<Vec<ArenaId>> {
-    let path = get_path();
-    check_for_latest_draft_cards(path)
-}
-
 static PARENT_DIR_1: & str = "Wizards Of The Coast";
 static PARENT_DIR_2: & str = "MTGA";
 static LOG_FILE_NAME: & str = "Player.log";
 
-fn get_path() -> PathBuf {
+pub fn get_default_path() -> PathBuf {
     if let Some(dirs) = BaseDirs::new() {
         let os_dir = match OS {
             "windows" => Path::new("AppData").join("LocalLow"), // This path is untested as not yet run on a windows machine
@@ -33,7 +28,7 @@ fn get_path() -> PathBuf {
     }
 }
 
-fn check_for_latest_draft_cards(path: PathBuf) -> Option<Vec<ArenaId>> {
+pub fn check_for_latest_draft_cards(path: PathBuf) -> Option<Vec<ArenaId>> {
     let line_read = search_file_for_latest_draft_line(path)
         .and_then(|l| l.split_once(' ').map(|s| s.1.to_string()))
         .and_then(|l| Value::from_str(l.as_str()).ok())

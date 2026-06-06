@@ -5,7 +5,7 @@ static DATABASE_NAME: & str = "AllPrintings.sqlite";
 
 #[derive(Clone, Debug)]
 pub struct Card {
-    pub arenaId: i32,
+    pub arena_id: i32,
     pub name: String,
 }
 
@@ -19,7 +19,7 @@ struct CardShim {
     name: String,
 }
 
-pub fn get_card_names(path: PathBuf, card_ids: Vec<i32>) -> Result<Vec<Card>> {
+pub fn get_card_names(path: PathBuf, card_ids: &[i32]) -> Result<Vec<Card>> {
     let conn = get_connection(path);
     let mut cards = vec![];
     let mut err = None;
@@ -40,7 +40,7 @@ pub fn get_card_names(path: PathBuf, card_ids: Vec<i32>) -> Result<Vec<Card>> {
                 })?;
                 if let Some(row_card) = iter_card.next() {
                     if let Ok(card) = row_card {
-                        cards.push(Card { arenaId: id.clone(), name: card.name });
+                        cards.push(Card { arena_id: id.clone(), name: card.name });
                     }
                     else {
                         err = Some(row_card.unwrap_err());
