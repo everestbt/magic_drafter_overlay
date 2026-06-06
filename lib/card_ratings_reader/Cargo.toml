@@ -1,0 +1,9 @@
+[package]
+name = "card_ratings_reader"
+version = "0.0.0"
+edition = "2021"
+description = "Checks for the ratings of a card"
+
+[dependencies]
+csv.workspace = true
+rust_decimal.workspace = true

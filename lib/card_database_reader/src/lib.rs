@@ -19,7 +19,7 @@ struct CardShim {
     name: String,
 }
 
-pub fn get_card_names(path: PathBuf, card_ids: &[i32]) -> Result<Vec<Card>> {
+pub fn get_card_names(path: &PathBuf, card_ids: &[i32]) -> Result<Vec<Card>> {
     let conn = get_connection(path);
     let mut cards = vec![];
     let mut err = None;
@@ -62,7 +62,7 @@ pub fn get_card_names(path: PathBuf, card_ids: &[i32]) -> Result<Vec<Card>> {
     }
 }
 
-fn get_connection(path: PathBuf) -> Connection {
+fn get_connection(path: &PathBuf) -> Connection {
     let path = path.join(DATABASE_NAME);
     let conn: Connection = Connection::open(path).expect("Failed to open a connection");
     conn

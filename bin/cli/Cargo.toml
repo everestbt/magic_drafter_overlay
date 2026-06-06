@@ -8,6 +8,7 @@ description = "The CLI for Magic Drafter Overlay"
 clap.workspace = true
 player_log_reader.workspace = true
 card_database_reader.workspace = true
+card_ratings_reader.workspace = true
 
 [[bin]]
 path = "src/main.rs"
