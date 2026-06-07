@@ -75,7 +75,7 @@ pub fn main() {
 }
 
 fn check_for_ratings(arena_ids : &Vec<i32>, directory: &PathBuf, ratings_path: &PathBuf, sort_name: &str) -> Vec<CardRatings> {
-    let names: Vec<String> = get_card_names(&directory, &arena_ids).expect("Should find all cards")
+    let names: Vec<String> = get_card_names(&directory, &arena_ids).expect("Loading cards failed, check database integrity")
         .iter()
         .map(|c| c.name.clone())
         .collect();

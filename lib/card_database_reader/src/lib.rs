@@ -53,6 +53,9 @@ pub fn get_card_names(path: &PathBuf, card_ids: &[i32]) -> Result<Vec<Card>> {
                 break 
             }
         }
+        else {
+            println!("CARD NOT FOUND IN DATABSE: {}", id)
+        }
     }
     if let Some(error) = err {
         Err(error)
