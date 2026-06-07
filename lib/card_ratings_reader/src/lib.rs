@@ -31,10 +31,10 @@ pub fn get_ratings(path: &PathBuf, cards: &[String], sort_val: &str) -> Result<V
 
 fn card_name_match(rating_name: &str, card_name: &str) -> bool {
     // First lowercase them
-    let lower_rating_name = rating_name.to_lowercase();
+    let rating_name_lower = rating_name.to_lowercase();
     let card_name_lower = card_name.to_lowercase();
     // Check if the card_name contains the rating name and the vice-versa
-    card_name_lower.contains(&lower_rating_name) || lower_rating_name.contains(&card_name_lower)
+    card_name_lower.contains(&rating_name_lower) || rating_name_lower.contains(&card_name_lower)
 }
 
 fn map_rating(rating: &str) -> Option<Decimal> {
