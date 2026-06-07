@@ -5,7 +5,7 @@ edition = "2021"
 description = "The UI for Magic Drafter Overlay"
 
 [dependencies]
-iced.workspace = true
+bevy.workspace = true
 color-eyre.workspace = true
 
 [[bin]]
