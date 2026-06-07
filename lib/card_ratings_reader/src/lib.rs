@@ -9,7 +9,7 @@ pub struct CardRatings{
     pub rating: Option<Decimal>
 }
 
-pub fn get_ratings(path: PathBuf, cards: &[String], sort_val: &str) -> Result<Vec<CardRatings>, Error> {
+pub fn get_ratings(path: &PathBuf, cards: &[String], sort_val: &str) -> Result<Vec<CardRatings>, Error> {
     let mut rdr = ReaderBuilder::new().has_headers(true).from_path(path)?;
 
     // Find the column for the rating

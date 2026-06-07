@@ -39,47 +39,48 @@ pub fn main() {
     else {
         get_default_path()
     };
+    let ratings_path = directory.join(args.ratings);
 
     if args.poll {
-        let mut latest_ratings = vec![];
+        let mut latest_ids = vec![];
         loop {
-            let ratings = check_for_ratings(&player_log_path, &directory, &args.ratings, &args.sort);
-            if &ratings.len() != &latest_ratings.len() { // Use the fact that the number of cards will change when there is a new draft 
-                for rating in &ratings {
-                    println!("{} : {}", 
-                        rating.card_name, 
-                        rating.rating.map(|d| d.to_string()).unwrap_or("No rating".to_string()))
+            let ids = check_for_latest_draft_cards(&player_log_path);
+            if let Some(latest) = ids {
+                if latest.len() != latest_ids.len() { // Use the fact that the number of cards will change when there is a new draft pack
+                    let ratings = check_for_ratings(&latest, &directory, &ratings_path, &args.sort);
+                    println!("------------------------");
+                    for rating in &ratings {
+                        println!("{} : {}", 
+                            rating.card_name, 
+                            rating.rating.map(|d| d.to_string()).unwrap_or("No rating".to_string()));
+                    }
+                    latest_ids = latest;
                 }
-                latest_ratings = ratings;
             }
             sleep(Duration::from_secs(1));
         }
     }
     else {
-        let ratings = check_for_ratings(&player_log_path, &directory, &args.ratings, &args.sort);
-        for rating in ratings {
-            println!("{} : {}", 
-                rating.card_name, 
-                rating.rating.map(|d| d.to_string()).unwrap_or("No rating".to_string()))
+        let ids = check_for_latest_draft_cards(&player_log_path);
+        if let Some(latest) = ids {
+            let ratings = check_for_ratings(&latest, &directory, &ratings_path, &args.sort);
+            for rating in ratings {
+                println!("{} : {}", 
+                    rating.card_name, 
+                    rating.rating.map(|d| d.to_string()).unwrap_or("No rating".to_string()))
+            }
         }
+        
     }
 }
 
-fn check_for_ratings(player_log_path : &PathBuf, directory: &PathBuf, ratings_file: &str, sort_name: &str) -> Vec<CardRatings> {
-    let latest = check_for_latest_draft_cards(player_log_path);
-    if let Some(cards) = latest {
-        let ids: Vec<i32> = cards.iter().map(|c| c.id).collect();
-        let names: Vec<String> = get_card_names(&directory, &ids).expect("Should find all cards")
-            .iter()
-            .map(|c| c.name.clone())
-            .collect();
+fn check_for_ratings(arena_ids : &Vec<i32>, directory: &PathBuf, ratings_path: &PathBuf, sort_name: &str) -> Vec<CardRatings> {
+    let names: Vec<String> = get_card_names(&directory, &arena_ids).expect("Should find all cards")
+        .iter()
+        .map(|c| c.name.clone())
+        .collect();
 
-        let ratings_path = directory.join(ratings_file);
-        let mut ratings = get_ratings(ratings_path, &names, sort_name).expect("Failed to read ratings");
-        ratings.sort_by_key(|r| Reverse(r.rating));
-        ratings
-    }
-    else {
-        vec![]
-    }
+    let mut ratings = get_ratings(ratings_path, &names, sort_name).expect("Failed to read ratings");
+    ratings.sort_by_key(|r| Reverse(r.rating));
+    ratings
 }

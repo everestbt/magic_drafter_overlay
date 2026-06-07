@@ -6,10 +6,6 @@ use std::io::{BufRead, BufReader};
 use std::str::FromStr;
 use serde_json::Value;
 
-pub struct ArenaId {
-    pub id: i32
-}
-
 static PARENT_DIR_1: & str = "Wizards Of The Coast";
 static PARENT_DIR_2: & str = "MTGA";
 static LOG_FILE_NAME: & str = "Player.log";
@@ -28,7 +24,8 @@ pub fn get_default_path() -> PathBuf {
     }
 }
 
-pub fn check_for_latest_draft_cards(path: &PathBuf) -> Option<Vec<ArenaId>> {
+/// Returns the card arena ids if present
+pub fn check_for_latest_draft_cards(path: &PathBuf) -> Option<Vec<i32>> {
     let line_read = search_file_for_latest_draft_line(path)
         .and_then(|l| l.split_once(' ').map(|s| s.1.to_string()))
         .and_then(|l| Value::from_str(l.as_str()).ok())
@@ -38,7 +35,7 @@ pub fn check_for_latest_draft_cards(path: &PathBuf) -> Option<Vec<ArenaId>> {
             let mut cards = vec![];
             for card in l.split(',') {
                 let id = i32::from_str(card).expect("Card id not an integer");
-                cards.push(ArenaId {id});
+                cards.push(id);
             }
             cards
         });
@@ -85,6 +82,6 @@ mod tests {
     fn test_read_in_player_log() {
         let cards = check_for_latest_draft_cards(&PathBuf::from_str("./PlayerLogExample.log").unwrap());
         assert!(cards.is_some());
-        assert_eq!(cards.unwrap().first().unwrap().id, 102708);
+        assert_eq!(cards.unwrap().first().unwrap(), &102708);
     }
 }
