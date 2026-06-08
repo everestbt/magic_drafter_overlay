@@ -1,5 +1,5 @@
 use bevy::prelude::*;
-use bevy::window::{WindowLevel, CursorOptions};
+use bevy::window::{CursorOptions, WindowLevel, WindowResolution};
 #[cfg(any(target_os = "macos", target_os = "linux"))]
 use bevy::window::CompositeAlphaMode;
 
@@ -7,7 +7,7 @@ use bevy::window::CompositeAlphaMode;
 fn main() -> Result<()> {
     color_eyre::install()?;
     let window = Window {
-        // Enable transparent support for the window
+        title: "Magic Drafter Overlay".into(),
         transparent: true,
         decorations: false,
         window_level: WindowLevel::AlwaysOnTop,
@@ -15,6 +15,8 @@ fn main() -> Result<()> {
         composite_alpha_mode: CompositeAlphaMode::PostMultiplied,
         #[cfg(target_os = "linux")]
         composite_alpha_mode: CompositeAlphaMode::PreMultiplied,
+        position: WindowPosition::new(IVec2::new(0, 200)), // Set to top left corner with a fixed size
+        resolution: WindowResolution::new(500, 700),
         ..default()
     };
     let cursor = CursorOptions {
@@ -28,6 +30,7 @@ fn main() -> Result<()> {
             .set(WindowPlugin {
                 primary_window: Some(window),
                 primary_cursor_options: Some(cursor),
+                
                 ..default()}
             )
         )
@@ -36,13 +39,13 @@ fn main() -> Result<()> {
     Ok(())
 }
 
-fn setup(mut commands: Commands, asset_server: Res<AssetServer>) {
+fn setup(mut commands: Commands) {
     commands.spawn(Camera2d);    
     commands.spawn((
         Text::new("From an &str into a Text with the default font!"),
         Node {
             position_type: PositionType::Absolute,
-            bottom: px(5),
+            top: px(5),
             left: px(15),
             ..default()
         },
